@@ -6,7 +6,7 @@
   <link href="https://ruibol.github.io/atom.xml" rel="self"/>
   
   <link href="https://ruibol.github.io/"/>
-  <updated>2021-05-07T10:36:10.030Z</updated>
+  <updated>2021-05-07T14:32:42.654Z</updated>
   <id>https://ruibol.github.io/</id>
   
   <author>
@@ -17,49 +17,76 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My New Post</title>
-    <link href="https://ruibol.github.io/2021/05/07/My-New-Post/"/>
-    <id>https://ruibol.github.io/2021/05/07/My-New-Post/</id>
-    <published>2021-05-06T17:14:22.000Z</published>
-    <updated>2021-05-07T10:36:10.030Z</updated>
+    <title>【Java】多线程笔记02 - 线程状态</title>
+    <link href="https://ruibol.github.io/2021/05/07/%E3%80%90Java%E3%80%91%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%AC%94%E8%AE%B002%20-%20%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81/"/>
+    <id>https://ruibol.github.io/2021/05/07/%E3%80%90Java%E3%80%91%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%AC%94%E8%AE%B002%20-%20%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81/</id>
+    <published>2021-05-07T09:13:09.000Z</published>
+    <updated>2021-05-07T14:32:42.654Z</updated>
     
-    <content type="html"><![CDATA[<p>这是我的第一篇博客</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="线程状态"><a href="#线程状态" class="headerlink" title="线程状态"></a>线程状态</h1><h3 id="停止线程"><a href="#停止线程" class="headerlink" title="停止线程"></a>停止线程</h3><ul><li>建议线程<strong>正常停止</strong>：<strong>利用次数，不建议死循环</strong></li><li>建议使用<strong>标志位</strong>进行<strong>终止变量</strong>：当flag=false，则终止线程运行。<span id="more"></span></li><li>不要用stop或destroy等过时方法</li></ul>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;这是我的第一篇博客&lt;/p&gt;
-</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;线程状态&quot;&gt;&lt;a href=&quot;#线程状态&quot; class=&quot;headerlink&quot; title=&quot;线程状态&quot;&gt;&lt;/a&gt;线程状态&lt;/h1&gt;&lt;h3 id=&quot;停止线程&quot;&gt;&lt;a href=&quot;#停止线程&quot; class=&quot;headerlink&quot; title=&quot;停止线程&quot;&gt;&lt;/a&gt;停止线程&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;建议线程&lt;strong&gt;正常停止&lt;/strong&gt;：&lt;strong&gt;利用次数，不建议死循环&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;建议使用&lt;strong&gt;标志位&lt;/strong&gt;进行&lt;strong&gt;终止变量&lt;/strong&gt;：当flag=false，则终止线程运行。&lt;/li&gt;&lt;/ul&gt;</summary>
     
     
     
-    <category term="Springboot" scheme="https://ruibol.github.io/categories/Springboot/"/>
+    <category term="JavaSE" scheme="https://ruibol.github.io/categories/JavaSE/"/>
     
     
-    <category term="Hexo" scheme="https://ruibol.github.io/tags/Hexo/"/>
+    <category term="Java" scheme="https://ruibol.github.io/tags/Java/"/>
     
-    <category term="NexT" scheme="https://ruibol.github.io/tags/NexT/"/>
+    <category term="多线程" scheme="https://ruibol.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://ruibol.github.io/2021/05/07/hello-world/"/>
-    <id>https://ruibol.github.io/2021/05/07/hello-world/</id>
-    <published>2021-05-06T17:05:12.759Z</published>
-    <updated>2021-05-06T17:05:12.759Z</updated>
+    <title>【Java】多线程笔记01 - 进程与线程</title>
+    <link href="https://ruibol.github.io/2021/05/07/%E3%80%90Java%E3%80%91%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%AC%94%E8%AE%B001%20-%20%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/"/>
+    <id>https://ruibol.github.io/2021/05/07/%E3%80%90Java%E3%80%91%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%AC%94%E8%AE%B001%20-%20%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/</id>
+    <published>2021-05-07T06:37:22.000Z</published>
+    <updated>2021-05-07T14:32:42.050Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="进程与线程（process-amp-thread）"><a href="#进程与线程（process-amp-thread）" class="headerlink" title="进程与线程（process&amp;thread）"></a>进程与线程（process&amp;thread）</h1><p>一个进程执行多个线程。默认线程有main函数（用户编写）和gc垃圾回收线程（JVM提供）。<span id="more"></span></p><hr><h1 id="线程创建（Thread、Runnable、Callable）"><a href="#线程创建（Thread、Runnable、Callable）" class="headerlink" title="线程创建（Thread、Runnable、Callable）"></a>线程创建（Thread、Runnable、Callable）</h1><h2 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h2><ul><li>自定义线程类<font color="red"><strong>继承extends Thread类</strong></font></li><li>重写**run()**方法</li><li>创建线程对象，调用**start()**方法启动线程：子类对象.start()</li></ul><p><font color="red"><strong>线程不一定立即执行，由CPU安排调度</strong></font></p><p><strong>不建议使用，因为OOP单继承局限性</strong> </p><hr><h2 id="Runnable"><a href="#Runnable" class="headerlink" title="Runnable"></a>Runnable</h2><ul><li>定义MyRunnable类<font color="red"><strong>实现implements Runnable接口</strong></font></li><li>重写**run()**方法，编写线程执行体</li><li>创建线程对象，调用**start()**方法启动线程：传入目标对象+Thread对象.start()</li></ul><p><font color="red"><strong>推荐使用Runnable对象，方便同一个对象被多个线程使用</strong></font></p><p><strong>一份资源，多个代理</strong></p><hr><h2 id="Callable（了解即可）"><a href="#Callable（了解即可）" class="headerlink" title="Callable（了解即可）"></a>Callable（了解即可）</h2><ul><li><strong>实现Callable接口</strong>，需要返回值类型 implements Callable<Boolean></Boolean></li><li><strong>重写call()方法</strong>，需要在main()函数抛出异常</li><li><strong>创建目标对象</strong></li><li><strong>创建执行服务</strong> ExecutorService ser = Executors.newFixedThreadPool(3);</li><li><strong>提交执行</strong> Future<Boolean> r1 = ser.submit(t1);</Boolean></li><li><strong>获取结果</strong> boolean rs1 = r1.get();</li><li><strong>关闭服务</strong> ser.shutdownNow();</li></ul><p><strong>使用Callable的好处：</strong>1.可以定义返回值 2.可以抛出异常</p><hr><h1 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h1><h3 id="函数式接口"><a href="#函数式接口" class="headerlink" title="函数式接口"></a>函数式接口</h3><p>任何接口，如果<strong>只包含唯一一个抽象方法</strong>，那么它就是函数式接口</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>对于函数式接口，我们可以通过lambda表达式来创建该接口的对象</p><p><strong>用lambda表达式的好处：</strong></p><ul><li>避免匿名内部类定义过多</li><li>简洁代码</li></ul>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;进程与线程（process-amp-thread）&quot;&gt;&lt;a href=&quot;#进程与线程（process-amp-thread）&quot; class=&quot;headerlink&quot; title=&quot;进程与线程（process&amp;amp;thread）&quot;&gt;&lt;/a&gt;进程与线程（process&amp;amp;thread）&lt;/h1&gt;&lt;p&gt;一个进程执行多个线程。默认线程有main函数（用户编写）和gc垃圾回收线程（JVM提供）。&lt;/p&gt;</summary>
     
     
     
+    <category term="JavaSE" scheme="https://ruibol.github.io/categories/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://ruibol.github.io/tags/Java/"/>
+    
+    <category term="多线程" scheme="https://ruibol.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【IDEA】快捷操作&amp;快捷键</title>
+    <link href="https://ruibol.github.io/2021/05/07/%E3%80%90IDEA%E3%80%91%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C&amp;%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>https://ruibol.github.io/2021/05/07/%E3%80%90IDEA%E3%80%91%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C&amp;%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+    <published>2021-05-07T05:14:22.000Z</published>
+    <updated>2021-05-07T14:32:41.300Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="持续更新…"><a href="#持续更新…" class="headerlink" title="持续更新…"></a>持续更新…</h3><ol><li>psvm - public static void main(Stringp[] args)</li><li>sout - System.out.println()</li><li>CTRL+SHIFT+ENTER 在当前行末尾生成分号<span id="more"></span></li><li>CTRL+]以及CTRL+[ 快速定位括号首末端</li><li><strong>双击SHIFT 快速搜索</strong></li><li>CTRL+ALT+SHIFT+N 快速寻找Controller</li><li>CTRL+ALT+L 排版代码</li><li>CTRL+/ 注释代码 Ctrl+Shift+/注释代码块</li><li>CTRL+D 在下一行复制该行代码</li><li>快速生成代码：<ol><li>定义局部变量 “java”.var</li><li>定义成员变量 “java”.field</li><li>格式化字符串 “name=%s”.format</li><li>判断非空 var.nn(.notnull) 判断空 var.null</li><li>取反判断 success.not.if</li><li>遍历集合 List list = Arrays.asList(“A”, “B”);  list.for / list.fori / list.forr</li><li>返回值 var.return</li><li>生成同步锁 obj.synchronized</li><li>生成lambda以及optional sout(“java”).lambda.val;  runnable.opt</li><li>for循环 100.fori</li><li><strong>生成构造方法 alt+insert</strong></li></ol></li><li><strong>跳到行首/尾 单击Home/End键</strong></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;持续更新…&quot;&gt;&lt;a href=&quot;#持续更新…&quot; class=&quot;headerlink&quot; title=&quot;持续更新…&quot;&gt;&lt;/a&gt;持续更新…&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;psvm - public static void main(Stringp[] args)&lt;/li&gt;
+&lt;li&gt;sout - System.out.println()&lt;/li&gt;
+&lt;li&gt;CTRL+SHIFT+ENTER 在当前行末尾生成分号&lt;/li&gt;&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="JavaSE" scheme="https://ruibol.github.io/categories/JavaSE/"/>
+    
+    
+    <category term="Tools" scheme="https://ruibol.github.io/tags/Tools/"/>
+    
+    <category term="IDEA" scheme="https://ruibol.github.io/tags/IDEA/"/>
     
   </entry>
   
