@@ -6,7 +6,7 @@
   <link href="https://ruibol.github.io/atom.xml" rel="self"/>
   
   <link href="https://ruibol.github.io/"/>
-  <updated>2021-05-06T17:14:22.474Z</updated>
+  <updated>2021-05-07T07:11:54.496Z</updated>
   <id>https://ruibol.github.io/</id>
   
   <author>
@@ -21,11 +21,17 @@
     <link href="https://ruibol.github.io/2021/05/07/My-New-Post/"/>
     <id>https://ruibol.github.io/2021/05/07/My-New-Post/</id>
     <published>2021-05-06T17:14:22.000Z</published>
-    <updated>2021-05-06T17:14:22.474Z</updated>
+    <updated>2021-05-07T07:11:54.496Z</updated>
     
     
     
     
+    <category term="Web" scheme="https://ruibol.github.io/categories/Web/"/>
+    
+    
+    <category term="Hexo" scheme="https://ruibol.github.io/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://ruibol.github.io/tags/NexT/"/>
     
   </entry>
   

@@ -22,5 +22,12 @@
     <title>My New Post</title>
     <url>/2021/05/07/My-New-Post/</url>
     <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
   </entry>
 </search>
