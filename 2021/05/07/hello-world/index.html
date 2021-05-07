@@ -464,7 +464,8 @@
           
 
   
-    <div id="gitalk-container"></div>
+    <div id="gitalk-container">
+    </div>
 
 
         </div>
@@ -815,20 +816,20 @@ setInterval("createtime()",250);
 
 
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-   <script type="text/javascript">
-		var gitalk = new Gitalk({
-		  clientID: '',
-		  clientSecret: '',
-		  repo: 'blog-comments',
-		  owner: '',
-		  admin: [''], 
-		  id: location.pathname,
-		  distractionFreeMode: 'true'
-		})
-		gitalk.render('gitalk-container')           
-       </script>
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '1c3f2ee285829d9f630a',
+      clientSecret: '0a0164da9ba4247cfd7ef022334a2d46c6df63f6',
+      repo: 'blog-comments',
+      owner: 'ruibol',
+      admin: ['ruibol'],
+      id: location.pathname,
+      distractionFreeMode: 'false'
+    })
+    gitalk.render('gitalk-container')
+  </script>
 
   
 
