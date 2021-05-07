@@ -3,9 +3,10 @@
   <entry>
     <title>My New Post</title>
     <url>/2021/05/07/My-New-Post/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>这是我的第一篇博客</p>
+]]></content>
       <categories>
-        <category>Web</category>
+        <category>Springboot</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
