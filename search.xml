@@ -170,4 +170,27 @@
         <tag>多线程</tag>
       </tags>
   </entry>
+  <entry>
+    <title>博客更新日志</title>
+    <url>/2021/05/07/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<h2 id="ruibol-github-io-更新日志"><a href="#ruibol-github-io-更新日志" class="headerlink" title="ruibol.github.io 更新日志"></a>ruibol.github.io 更新日志</h2><p><strong>2021年5月8日更新1.1.0</strong></p>
+<ol>
+<li>修复日志页面NotFound问题</li>
+<li>优化文章分类</li>
+<li>新增RSS功能</li>
+<li>新增右上角Github角标</li>
+<li>新增本地搜索功能</li>
+<li>新增评论功能</li>
+<li>添加网页背景图片</li>
+<li>更换网站站标</li>
+</ol>
+<p><strong>2021年5月7日发布1.0.0</strong></p>
+<ol>
+<li>ruibol.github.io上线</li>
+</ol>
+]]></content>
+      <categories>
+        <category>博客站务</category>
+      </categories>
+  </entry>
 </search>
