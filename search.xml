@@ -1,44 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>【IDEA】快捷操作</title>
-    <url>/2021/05/07/%E3%80%90IDEA%E3%80%91%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<h3 id="持续更新…"><a href="#持续更新…" class="headerlink" title="持续更新…"></a>持续更新…</h3><ol>
-<li>psvm - public static void main(Stringp[] args)</li>
-<li>sout - System.out.println()</li>
-<li>CTRL+SHIFT+ENTER 在当前行末尾生成分号</li>
-<li>CTRL+]以及CTRL+[ 快速定位括号首末端</li>
-<li><strong>双击SHIFT 快速搜索</strong></li>
-<li>CTRL+ALT+SHIFT+N 快速寻找Controller</li>
-<li>CTRL+ALT+L 排版代码</li>
-<li>CTRL+/ 注释代码 Ctrl+Shift+/注释代码块</li>
-<li>CTRL+D 在下一行复制该行代码</li>
-<li>快速生成代码：<ol>
-<li>定义局部变量 “java”.var</li>
-<li>定义成员变量 “java”.field</li>
-<li>格式化字符串 “name=%s”.format</li>
-<li>判断非空 var.nn(.notnull) 判断空 var.null</li>
-<li>取反判断 success.not.if</li>
-<li>遍历集合 List list = Arrays.asList(“A”, “B”);  list.for / list.fori / list.forr</li>
-<li>返回值 var.return</li>
-<li>生成同步锁 obj.synchronized</li>
-<li>生成lambda以及optional sout(“java”).lambda.val;  runnable.opt</li>
-<li>for循环 100.fori</li>
-<li><strong>生成构造方法 alt+insert</strong></li>
-</ol>
-</li>
-<li><strong>跳到行首/尾 单击Home/End键</strong></li>
-</ol>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Tools</tag>
-        <tag>IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【JavaSE】JUC并发编程</title>
     <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</url>
     <content><![CDATA[]]></content>
@@ -50,69 +12,6 @@
         <tag>JUC</tag>
         <tag>并发</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>【JavaSE】注解和反射</title>
-    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>注解</tag>
-        <tag>反射</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【JavaSE】网络编程</title>
-    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>网络编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>欢迎来到我的博客</title>
-    <url>/2021/05/07/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="本博客计划将所有文章分为五类以便查阅"><a href="#本博客计划将所有文章分为五类以便查阅" class="headerlink" title="本博客计划将所有文章分为五类以便查阅"></a>本博客计划将所有文章分为五类以便查阅</h2><table>
-<thead>
-<tr>
-<th align="center">分类</th>
-<th align="center">内容</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">学习笔记</td>
-<td align="center">知识点和易错点</td>
-</tr>
-<tr>
-<td align="center">项目总结</td>
-<td align="center">项目的设计思路、实现过程以及难点</td>
-</tr>
-<tr>
-<td align="center">解决方案</td>
-<td align="center">对某个特定问题的解决方法</td>
-</tr>
-<tr>
-<td align="center">博客站务</td>
-<td align="center">该博客的搭建、部署、更新以及公告</td>
-</tr>
-<tr>
-<td align="center">日志随笔</td>
-<td align="center">除以上类别外的所有文章</td>
-</tr>
-</tbody></table>
-<p><strong>某些文章没有打开评论功能，如有需要可在“关于”页面留言，或通过网页版左侧邮箱联系我</strong></p>
-<p><font color="red"><strong>感谢<a href="https://yxchangingself.xyz/">@憧憬少</a>提供的博客分类思路</strong></font></p>
-]]></content>
-      <categories>
-        <category>博客站务</category>
-      </categories>
   </entry>
   <entry>
     <title>【JavaSE】多线程</title>
@@ -192,5 +91,106 @@
       <categories>
         <category>博客站务</category>
       </categories>
+  </entry>
+  <entry>
+    <title>【JavaSE】注解和反射</title>
+    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>注解</tag>
+        <tag>反射</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【IDEA】快捷操作</title>
+    <url>/2021/05/07/%E3%80%90IDEA%E3%80%91%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h3 id="持续更新…"><a href="#持续更新…" class="headerlink" title="持续更新…"></a>持续更新…</h3><ol>
+<li>psvm - public static void main(Stringp[] args)</li>
+<li>sout - System.out.println()</li>
+<li>CTRL+SHIFT+ENTER 在当前行末尾生成分号</li>
+<li>CTRL+]以及CTRL+[ 快速定位括号首末端</li>
+<li><strong>双击SHIFT 快速搜索</strong></li>
+<li>CTRL+ALT+SHIFT+N 快速寻找Controller</li>
+<li>CTRL+ALT+L 排版代码</li>
+<li>CTRL+/ 注释代码 Ctrl+Shift+/注释代码块</li>
+<li>CTRL+D 在下一行复制该行代码</li>
+<li>快速生成代码：<ol>
+<li>定义局部变量 “java”.var</li>
+<li>定义成员变量 “java”.field</li>
+<li>格式化字符串 “name=%s”.format</li>
+<li>判断非空 var.nn(.notnull) 判断空 var.null</li>
+<li>取反判断 success.not.if</li>
+<li>遍历集合 List list = Arrays.asList(“A”, “B”);  list.for / list.fori / list.forr</li>
+<li>返回值 var.return</li>
+<li>生成同步锁 obj.synchronized</li>
+<li>生成lambda以及optional sout(“java”).lambda.val;  runnable.opt</li>
+<li>for循环 100.fori</li>
+<li><strong>生成构造方法 alt+insert</strong></li>
+</ol>
+</li>
+<li><strong>跳到行首/尾 单击Home/End键</strong></li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Tools</tag>
+        <tag>IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>欢迎来到我的博客</title>
+    <url>/2021/05/07/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="本博客计划将所有文章分为五类以便查阅"><a href="#本博客计划将所有文章分为五类以便查阅" class="headerlink" title="本博客计划将所有文章分为五类以便查阅"></a>本博客计划将所有文章分为五类以便查阅</h2><table>
+<thead>
+<tr>
+<th align="center">分类</th>
+<th align="center">内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">学习笔记</td>
+<td align="center">知识点和易错点</td>
+</tr>
+<tr>
+<td align="center">项目总结</td>
+<td align="center">项目的设计思路、实现过程以及难点</td>
+</tr>
+<tr>
+<td align="center">解决方案</td>
+<td align="center">对某个特定问题的解决方法</td>
+</tr>
+<tr>
+<td align="center">博客站务</td>
+<td align="center">该博客的搭建、部署、更新以及公告</td>
+</tr>
+<tr>
+<td align="center">日志随笔</td>
+<td align="center">除以上类别外的所有文章</td>
+</tr>
+</tbody></table>
+<p><strong>某些文章没有打开评论功能，如有需要可在“关于”页面留言，或通过网页版左侧邮箱联系我</strong></p>
+<p><font color="red"><strong>感谢<a href="https://yxchangingself.xyz/">@憧憬少</a>提供的博客分类思路</strong></font></p>
+]]></content>
+      <categories>
+        <category>博客站务</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>【JavaSE】网络编程</title>
+    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>网络编程</tag>
+      </tags>
   </entry>
 </search>
