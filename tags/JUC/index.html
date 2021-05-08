@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Java,多线程," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -81,21 +81,13 @@
 
 
 
-<meta name="description" content="进程与线程（process&amp;thread）一个进程执行多个线程。默认线程有main函数（用户编写）和gc垃圾回收线程（JVM提供）。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="【Java】多线程笔记01 - 进程与线程">
-<meta property="og:url" content="https://ruibol.github.io/2021/05/07/%E3%80%90Java%E3%80%91%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%AC%94%E8%AE%B001%20-%20%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reidorz">
+<meta property="og:url" content="https://ruibol.github.io/tags/JUC/index.html">
 <meta property="og:site_name" content="Reidorz">
-<meta property="og:description" content="进程与线程（process&amp;thread）一个进程执行多个线程。默认线程有main函数（用户编写）和gc垃圾回收线程（JVM提供）。">
 <meta property="og:locale">
-<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
-<meta property="article:published_time" content="2021-05-07T06:37:22.000Z">
-<meta property="article:modified_time" content="2021-05-07T14:32:42.050Z">
 <meta property="article:author" content="ruibol">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="多线程">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
 
 
 
@@ -125,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="https://ruibol.github.io/2021/05/07/【Java】多线程笔记01 - 进程与线程/"/>
+  <link rel="canonical" href="https://ruibol.github.io/tags/JUC/"/>
 
 
 
 
 
-  <title>【Java】多线程笔记01 - 进程与线程 | Reidorz</title>
+  <title>标签: JUC | Reidorz</title>
   
 
 
@@ -150,7 +142,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <a target="_blank" rel="noopener" href="https://github.com/ruibol" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -290,235 +282,54 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>JUC<small>标签</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ruibol.github.io/2021/05/07/%E3%80%90Java%E3%80%91%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%AC%94%E8%AE%B001%20-%20%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Reidorz">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2021/05/08/%E3%80%90JavaSE%E3%80%91JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/" itemprop="url">
+              
+                <span itemprop="name">【JavaSE】JUC并发编程</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">【Java】多线程笔记01 - 进程与线程</h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-05-07T14:37:22+08:00">
-                2021-05-07
-              </time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2021-05-08T15:30:42+08:00"
+              content="2021-05-08" >
+          05-08
+        </time>
+      </div>
 
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2021-05-07T22:32:42+08:00">
-                2021-05-07
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaSE/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaSE</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h1 id="进程与线程（process-amp-thread）"><a href="#进程与线程（process-amp-thread）" class="headerlink" title="进程与线程（process&amp;thread）"></a>进程与线程（process&amp;thread）</h1><p>一个进程执行多个线程。默认线程有main函数（用户编写）和gc垃圾回收线程（JVM提供）。<span id="more"></span></p>
-<hr>
-<h1 id="线程创建（Thread、Runnable、Callable）"><a href="#线程创建（Thread、Runnable、Callable）" class="headerlink" title="线程创建（Thread、Runnable、Callable）"></a>线程创建（Thread、Runnable、Callable）</h1><h2 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h2><ul>
-<li>自定义线程类<font color="red"><strong>继承extends Thread类</strong></font></li>
-<li>重写**run()**方法</li>
-<li>创建线程对象，调用**start()**方法启动线程：子类对象.start()</li>
-</ul>
-<p><font color="red"><strong>线程不一定立即执行，由CPU安排调度</strong></font></p>
-<p><strong>不建议使用，因为OOP单继承局限性</strong> </p>
-<hr>
-<h2 id="Runnable"><a href="#Runnable" class="headerlink" title="Runnable"></a>Runnable</h2><ul>
-<li>定义MyRunnable类<font color="red"><strong>实现implements Runnable接口</strong></font></li>
-<li>重写**run()**方法，编写线程执行体</li>
-<li>创建线程对象，调用**start()**方法启动线程：传入目标对象+Thread对象.start()</li>
-</ul>
-<p><font color="red"><strong>推荐使用Runnable对象，方便同一个对象被多个线程使用</strong></font></p>
-<p><strong>一份资源，多个代理</strong></p>
-<hr>
-<h2 id="Callable（了解即可）"><a href="#Callable（了解即可）" class="headerlink" title="Callable（了解即可）"></a>Callable（了解即可）</h2><ul>
-<li><strong>实现Callable接口</strong>，需要返回值类型 implements Callable<Boolean></Boolean></li>
-<li><strong>重写call()方法</strong>，需要在main()函数抛出异常</li>
-<li><strong>创建目标对象</strong></li>
-<li><strong>创建执行服务</strong> ExecutorService ser = Executors.newFixedThreadPool(3);</li>
-<li><strong>提交执行</strong> Future<Boolean> r1 = ser.submit(t1);</Boolean></li>
-<li><strong>获取结果</strong> boolean rs1 = r1.get();</li>
-<li><strong>关闭服务</strong> ser.shutdownNow();</li>
-</ul>
-<p><strong>使用Callable的好处：</strong>1.可以定义返回值 2.可以抛出异常</p>
-<hr>
-<h1 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h1><h3 id="函数式接口"><a href="#函数式接口" class="headerlink" title="函数式接口"></a>函数式接口</h3><p>任何接口，如果<strong>只包含唯一一个抽象方法</strong>，那么它就是函数式接口</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
-<p>对于函数式接口，我们可以通过lambda表达式来创建该接口的对象</p>
-<p><strong>用lambda表达式的好处：</strong></p>
-<ul>
-<li>避免匿名内部类定义过多</li>
-<li>简洁代码</li>
-</ul>
-
-      
-    </div>
-    
-    
-    
-
-
-
-    <div>
-      
-        
-      
-    </div>
-
-
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
-          
-            <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 多线程</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2021/05/07/%E3%80%90IDEA%E3%80%91%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C&%E5%BF%AB%E6%8D%B7%E9%94%AE/" rel="next" title="【IDEA】快捷操作&快捷键">
-                <i class="fa fa-chevron-left"></i> 【IDEA】快捷操作&快捷键
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/05/07/%E3%80%90Java%E3%80%91%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%AC%94%E8%AE%B002%20-%20%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81/" rel="prev" title="【Java】多线程笔记02 - 线程状态">
-                【Java】多线程笔记02 - 线程状态 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -526,12 +337,6 @@
 
 
           
-
-  
-    <div id="gitalk-container">
-    </div>
-
-
         </div>
         
           
@@ -551,17 +356,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -581,7 +377,7 @@
                 <a href="/archives/">
                 <!-- <a href="/archives/%7C%7C%20archive"> -->
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -592,7 +388,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -603,7 +399,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -636,15 +432,15 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:ruibo.li@outlook.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope-o"></i>E-Mail</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
                     <a href="https://space.bilibili.com/520007" target="_blank" title="Bilibili">
                       
                         <i class="fa fa-fw fa-television"></i>Bilibili</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:ruibo.li@outlook.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope-o"></i>E-Mail</a>
                   </span>
                 
             </div>
@@ -661,22 +457,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%EF%BC%88process-amp-thread%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">进程与线程（process&amp;thread）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E5%88%9B%E5%BB%BA%EF%BC%88Thread%E3%80%81Runnable%E3%80%81Callable%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">线程创建（Thread、Runnable、Callable）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Thread"><span class="nav-number">2.1.</span> <span class="nav-text">Thread</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Runnable"><span class="nav-number">2.2.</span> <span class="nav-text">Runnable</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Callable%EF%BC%88%E4%BA%86%E8%A7%A3%E5%8D%B3%E5%8F%AF%EF%BC%89"><span class="nav-number">2.3.</span> <span class="nav-text">Callable（了解即可）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">Lambda表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="nav-number">3.0.1.</span> <span class="nav-text">函数式接口</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -834,10 +614,6 @@ setInterval("createtime()",250);
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
@@ -878,22 +654,6 @@ setInterval("createtime()",250);
 
 
 
-
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <div id="gitalk-container"></div>
-  <script type="text/javascript">
-    var gitalk = new Gitalk({
-      clientID: '1c3f2ee285829d9f630a',
-      clientSecret: '0a0164da9ba4247cfd7ef022334a2d46c6df63f6',
-      repo: 'blog-comments',
-      owner: 'ruibol',
-      admin: ['ruibol'],
-      id: location.pathname,
-      distractionFreeMode: 'false'
-    })
-    gitalk.render('gitalk-container')
-  </script>
 
   
 
