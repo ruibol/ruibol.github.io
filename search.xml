@@ -1,111 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>【JavaSE】JUC并发编程</title>
-    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>JUC</tag>
-        <tag>并发</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【JavaSE】多线程</title>
-    <url>/2021/05/07/%E3%80%90JavaSE%E3%80%91%E5%A4%9A%E7%BA%BF%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="进程与线程（process-amp-thread）"><a href="#进程与线程（process-amp-thread）" class="headerlink" title="进程与线程（process&amp;thread）"></a>进程与线程（process&amp;thread）</h1><p>一个进程执行多个线程。默认线程有main函数（用户编写）和gc垃圾回收线程（JVM提供）。</p>
-<hr>
-<h1 id="线程创建（Thread、Runnable、Callable）"><a href="#线程创建（Thread、Runnable、Callable）" class="headerlink" title="线程创建（Thread、Runnable、Callable）"></a>线程创建（Thread、Runnable、Callable）</h1><h2 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h2><ul>
-<li>自定义线程类<font color="red"><strong>继承extends Thread类</strong></font></li>
-<li>重写**run()**方法</li>
-<li>创建线程对象，调用**start()**方法启动线程：子类对象.start()</li>
-</ul>
-<p><font color="red"><strong>线程不一定立即执行，由CPU安排调度</strong></font></p>
-<p><strong>不建议使用，因为OOP单继承局限性</strong> </p>
-<hr>
-<h2 id="Runnable"><a href="#Runnable" class="headerlink" title="Runnable"></a>Runnable</h2><ul>
-<li>定义MyRunnable类<font color="red"><strong>实现implements Runnable接口</strong></font></li>
-<li>重写**run()**方法，编写线程执行体</li>
-<li>创建线程对象，调用**start()**方法启动线程：传入目标对象+Thread对象.start()</li>
-</ul>
-<p><font color="red"><strong>推荐使用Runnable对象，方便同一个对象被多个线程使用</strong></font></p>
-<p><strong>一份资源，多个代理</strong></p>
-<hr>
-<h2 id="Callable（了解即可）"><a href="#Callable（了解即可）" class="headerlink" title="Callable（了解即可）"></a>Callable（了解即可）</h2><ul>
-<li><strong>实现Callable接口</strong>，需要返回值类型 implements Callable<Boolean></Boolean></li>
-<li><strong>重写call()方法</strong>，需要在main()函数抛出异常</li>
-<li><strong>创建目标对象</strong></li>
-<li><strong>创建执行服务</strong> ExecutorService ser = Executors.newFixedThreadPool(3);</li>
-<li><strong>提交执行</strong> Future<Boolean> r1 = ser.submit(t1);</Boolean></li>
-<li><strong>获取结果</strong> boolean rs1 = r1.get();</li>
-<li><strong>关闭服务</strong> ser.shutdownNow();</li>
-</ul>
-<p><strong>使用Callable的好处：</strong>1.可以定义返回值 2.可以抛出异常</p>
-<hr>
-<h1 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h1><h3 id="函数式接口"><a href="#函数式接口" class="headerlink" title="函数式接口"></a>函数式接口</h3><p>任何接口，如果<strong>只包含唯一一个抽象方法</strong>，那么它就是函数式接口</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
-<p>对于函数式接口，我们可以通过lambda表达式来创建该接口的对象</p>
-<p><strong>用lambda表达式的好处：</strong></p>
-<ul>
-<li>避免匿名内部类定义过多</li>
-<li>简洁代码</li>
-</ul>
-<h1 id="线程状态"><a href="#线程状态" class="headerlink" title="线程状态"></a>线程状态</h1><h3 id="停止线程"><a href="#停止线程" class="headerlink" title="停止线程"></a>停止线程</h3><ul>
-<li>建议线程<strong>正常停止</strong>：<strong>利用次数，不建议死循环</strong></li>
-<li>建议使用<strong>标志位</strong>进行<strong>终止变量</strong>：当flag=false，则终止线程运行。</li>
-<li>不要用stop或destroy等过时方法</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>多线程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客更新日志</title>
-    <url>/2021/05/07/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
-    <content><![CDATA[<h2 id="ruibol-github-io-更新日志"><a href="#ruibol-github-io-更新日志" class="headerlink" title="ruibol.github.io 更新日志"></a>ruibol.github.io 更新日志</h2><p><strong>2021年5月8日更新1.1.0</strong></p>
-<ol>
-<li>修复日志页面NotFound问题</li>
-<li>优化文章分类</li>
-<li>新增RSS功能</li>
-<li>新增右上角Github角标</li>
-<li>新增本地搜索功能</li>
-<li>新增评论功能</li>
-<li>添加网页背景图片</li>
-<li>更换网站站标</li>
-</ol>
-<p><strong>2021年5月7日发布1.0.0</strong></p>
-<ol>
-<li>ruibol.github.io上线</li>
-</ol>
-]]></content>
-      <categories>
-        <category>博客站务</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>【JavaSE】注解和反射</title>
-    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>注解</tag>
-        <tag>反射</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【IDEA】快捷操作</title>
     <url>/2021/05/07/%E3%80%90IDEA%E3%80%91%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/</url>
     <content><![CDATA[<h3 id="持续更新…"><a href="#持续更新…" class="headerlink" title="持续更新…"></a>持续更新…</h3><ol>
@@ -144,6 +39,127 @@
       </tags>
   </entry>
   <entry>
+    <title>【JavaSE】JUC并发编程</title>
+    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>JUC</tag>
+        <tag>并发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【JavaSE】多线程</title>
+    <url>/2021/05/07/%E3%80%90JavaSE%E3%80%91%E5%A4%9A%E7%BA%BF%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="进程与线程"><a href="#进程与线程" class="headerlink" title="进程与线程"></a>进程与线程</h1><p>一个进程process执行多个线程thread。默认线程有main函数（用户编写）和gc垃圾回收线程（JVM提供）。</p>
+<h1 id="线程创建"><a href="#线程创建" class="headerlink" title="线程创建"></a>线程创建</h1><h2 id="继承Thread类"><a href="#继承Thread类" class="headerlink" title="继承Thread类"></a>继承Thread类</h2><ul>
+<li>自定义线程类 extends Thread</li>
+<li>重写run()方法，编写线程执行体</li>
+<li>创建线程对象，调用start()方法启动线程：<strong>子类对象.start()</strong></li>
+</ul>
+<p><font color="red"><strong>线程不一定立即执行，由CPU安排调度</strong></font><br><strong>缺点：OOP单继承局限性</strong> </p>
+<h2 id="实现Runnable接口"><a href="#实现Runnable接口" class="headerlink" title="实现Runnable接口"></a>实现Runnable接口</h2><ul>
+<li>自定义Runnable类 implements Runnable</li>
+<li>重写run()方法，编写线程执行体</li>
+<li>创建线程对象，调用start()方法启动线程：<strong>传入目标对象+Thread对象.start()</strong></li>
+</ul>
+<p><font color="red"><strong>推荐使用Runnable对象，方便同一个对象被多个线程使用</strong></font><br><strong>一份资源，多个代理</strong></p>
+<h2 id="实现Callable接口（了解即可）"><a href="#实现Callable接口（了解即可）" class="headerlink" title="实现Callable接口（了解即可）"></a>实现Callable接口（了解即可）</h2><ul>
+<li><strong>实现Callable接口</strong>，需要返回值类型 implements Callable<Boolean></Boolean></li>
+<li><strong>重写call()方法</strong>，需要在main()函数抛出异常</li>
+<li><strong>创建目标对象</strong></li>
+<li><strong>创建执行服务</strong> ExecutorService ser = Executors.newFixedThreadPool(3);</li>
+<li><strong>提交执行</strong> Future<Boolean> r1 = ser.submit(t1);</Boolean></li>
+<li><strong>获取结果</strong> boolean rs1 = r1.get();</li>
+<li><strong>关闭服务</strong> ser.shutdownNow();</li>
+</ul>
+<p><strong>优点：1.可以定义返回值； 2.可以抛出异常</strong></p>
+<h1 id="函数式接口"><a href="#函数式接口" class="headerlink" title="函数式接口"></a>函数式接口</h1><p>任何接口，如果<strong>只包含唯一一个抽象方法</strong>，那么它就是函数式接口</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对于函数式接口，我们可以通过lambda表达式来创建该接口的对象</p>
+<p><strong>用lambda表达式的好处： 1.避免匿名内部类定义过多；2.简洁代码</strong></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>多线程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【JavaSE】网络编程</title>
+    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>网络编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【JavaSE】注解和反射</title>
+    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/</url>
+    <content><![CDATA[<h1 id="三个内置注解"><a href="#三个内置注解" class="headerlink" title="三个内置注解"></a>三个内置注解</h1><ul>
+<li><code>@Override</code></li>
+<li><code>@Deprecated</code></li>
+<li><code>@SuppressWarnings(&quot;all&quot;)</code></li>
+</ul>
+<h1 id="四个元注解"><a href="#四个元注解" class="headerlink" title="四个元注解"></a>四个元注解</h1><ul>
+<li><code>Target(value = &#123;ElementType.METHOD, ElementType.TYPE&#125;)</code><br>Target表示我们的注解可以用在哪些地方</li>
+<li><code>@Retention(value = RetentionPolicy.RUNTIME)</code><br>Retention表示我们的注解在什么地方有效（runtime&gt;class&gt;sources 一般都用runtime）</li>
+<li><code>@Documented</code><br>Documented表示是否将我们的注解生成在JAVAdoc中</li>
+<li><code>@Inherited</code><br>Inherited表示子类可以继承父类的注解</li>
+</ul>
+<p><strong>四个元注解，重点是Target和Retention，基本是必写</strong></p>
+<h1 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h1><ul>
+<li>用@interface自定义注解</li>
+<li>注解的参数：<strong>参数类型 参数名();</strong><br>如果只有一个参数，建议用value命名<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> &quot;&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">age</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">id</span><span class="params">()</span> <span class="keyword">default</span> -1</span>; <span class="comment">//-1代表不存在</span></span><br><span class="line">String[] schools() <span class="keyword">default</span> &#123;<span class="string">&quot;monash&quot;</span>, <span class="string">&quot;utas&quot;</span>&#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>注解</tag>
+        <tag>反射</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客更新日志</title>
+    <url>/2021/05/07/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<h2 id="ruibol-github-io-更新日志"><a href="#ruibol-github-io-更新日志" class="headerlink" title="ruibol.github.io 更新日志"></a>ruibol.github.io 更新日志</h2><p><strong>2021年5月9日更新1.1.1</strong></p>
+<ol>
+<li>修复Markdown目录TOC跳转失效问题，<font color="red"><strong>感谢<a href="https://www.cnblogs.com/Createsequence/p/14150758.html">@Createsequence</a></strong></font></li>
+<li>修复代码块不显示高亮问题</li>
+</ol>
+<p><strong>2021年5月8日更新1.1.0</strong></p>
+<ol>
+<li>修复日志页面NotFound问题</li>
+<li>优化文章分类</li>
+<li>新增RSS功能</li>
+<li>新增右上角Github角标</li>
+<li>新增本地搜索功能</li>
+<li>新增评论功能</li>
+<li>添加网页背景图片</li>
+<li>更换网站站标</li>
+</ol>
+<p><strong>2021年5月7日发布1.0.0</strong></p>
+<ol>
+<li>ruibol.github.io上线</li>
+</ol>
+]]></content>
+      <categories>
+        <category>博客站务</category>
+      </categories>
+  </entry>
+  <entry>
     <title>欢迎来到我的博客</title>
     <url>/2021/05/07/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="本博客计划将所有文章分为五类以便查阅"><a href="#本博客计划将所有文章分为五类以便查阅" class="headerlink" title="本博客计划将所有文章分为五类以便查阅"></a>本博客计划将所有文章分为五类以便查阅</h2><table>
@@ -180,17 +196,5 @@
       <categories>
         <category>博客站务</category>
       </categories>
-  </entry>
-  <entry>
-    <title>【JavaSE】网络编程</title>
-    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>网络编程</tag>
-      </tags>
   </entry>
 </search>
