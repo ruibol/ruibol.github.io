@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【JavaSE】网络编程</title>
+    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>网络编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【JavaSE】注解和反射</title>
+    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/</url>
+    <content><![CDATA[<h1 id="三个内置注解"><a href="#三个内置注解" class="headerlink" title="三个内置注解"></a>三个内置注解</h1><ul>
+<li><code>@Override</code></li>
+<li><code>@Deprecated</code></li>
+<li><code>@SuppressWarnings(&quot;all&quot;)</code></li>
+</ul>
+<h1 id="四个元注解"><a href="#四个元注解" class="headerlink" title="四个元注解"></a>四个元注解</h1><ul>
+<li><code>Target(value = &#123;ElementType.METHOD, ElementType.TYPE&#125;)</code><br>Target表示我们的注解可以用在哪些地方</li>
+<li><code>@Retention(value = RetentionPolicy.RUNTIME)</code><br>Retention表示我们的注解在什么地方有效（runtime&gt;class&gt;sources 一般都用runtime）</li>
+<li><code>@Documented</code><br>Documented表示是否将我们的注解生成在JAVAdoc中</li>
+<li><code>@Inherited</code><br>Inherited表示子类可以继承父类的注解</li>
+</ul>
+<p><strong>四个元注解，重点是Target和Retention，基本是必写</strong></p>
+<h1 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h1><ul>
+<li>用@interface自定义注解<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE, ElementType.METHOD&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    <span class="comment">//如果只有一个参数，建议用value命名</span></span><br><span class="line">    <span class="function">String <span class="title">value</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>注解的参数：<strong>参数类型 参数名();</strong><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> &quot;&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">age</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">id</span><span class="params">()</span> <span class="keyword">default</span> -1</span>; <span class="comment">//-1代表不存在</span></span><br><span class="line">String[] schools() <span class="keyword">default</span> &#123;<span class="string">&quot;monash&quot;</span>, <span class="string">&quot;utas&quot;</span>&#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>注解</tag>
+        <tag>反射</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【IDEA】快捷操作</title>
     <url>/2021/05/07/%E3%80%90IDEA%E3%80%91%E5%BF%AB%E6%8D%B7%E6%93%8D%E4%BD%9C/</url>
     <content><![CDATA[<h3 id="持续更新…"><a href="#持续更新…" class="headerlink" title="持续更新…"></a>持续更新…</h3><ol>
@@ -36,19 +77,6 @@
       <tags>
         <tag>Tools</tag>
         <tag>IDEA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【JavaSE】JUC并发编程</title>
-    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>JUC</tag>
-        <tag>并发</tag>
       </tags>
   </entry>
   <entry>
@@ -91,47 +119,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【JavaSE】网络编程</title>
-    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>网络编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【JavaSE】注解和反射</title>
-    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/</url>
-    <content><![CDATA[<h1 id="三个内置注解"><a href="#三个内置注解" class="headerlink" title="三个内置注解"></a>三个内置注解</h1><ul>
-<li><code>@Override</code></li>
-<li><code>@Deprecated</code></li>
-<li><code>@SuppressWarnings(&quot;all&quot;)</code></li>
-</ul>
-<h1 id="四个元注解"><a href="#四个元注解" class="headerlink" title="四个元注解"></a>四个元注解</h1><ul>
-<li><code>Target(value = &#123;ElementType.METHOD, ElementType.TYPE&#125;)</code><br>Target表示我们的注解可以用在哪些地方</li>
-<li><code>@Retention(value = RetentionPolicy.RUNTIME)</code><br>Retention表示我们的注解在什么地方有效（runtime&gt;class&gt;sources 一般都用runtime）</li>
-<li><code>@Documented</code><br>Documented表示是否将我们的注解生成在JAVAdoc中</li>
-<li><code>@Inherited</code><br>Inherited表示子类可以继承父类的注解</li>
-</ul>
-<p><strong>四个元注解，重点是Target和Retention，基本是必写</strong></p>
-<h1 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h1><ul>
-<li>用@interface自定义注解</li>
-<li>注解的参数：<strong>参数类型 参数名();</strong><br>如果只有一个参数，建议用value命名<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> &quot;&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">age</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">id</span><span class="params">()</span> <span class="keyword">default</span> -1</span>; <span class="comment">//-1代表不存在</span></span><br><span class="line">String[] schools() <span class="keyword">default</span> &#123;<span class="string">&quot;monash&quot;</span>, <span class="string">&quot;utas&quot;</span>&#125;;</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>注解</tag>
-        <tag>反射</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客更新日志</title>
     <url>/2021/05/07/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
     <content><![CDATA[<h2 id="ruibol-github-io-更新日志"><a href="#ruibol-github-io-更新日志" class="headerlink" title="ruibol.github.io 更新日志"></a>ruibol.github.io 更新日志</h2><p><strong>2021年5月9日更新1.1.1</strong></p>
@@ -158,6 +145,19 @@
       <categories>
         <category>博客站务</category>
       </categories>
+  </entry>
+  <entry>
+    <title>【JavaSE】JUC并发编程</title>
+    <url>/2021/05/08/%E3%80%90JavaSE%E3%80%91JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>JUC</tag>
+        <tag>并发</tag>
+      </tags>
   </entry>
   <entry>
     <title>欢迎来到我的博客</title>

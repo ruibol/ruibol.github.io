@@ -6,7 +6,7 @@
   <link href="https://ruibol.github.io/atom.xml" rel="self"/>
   
   <link href="https://ruibol.github.io/"/>
-  <updated>2021-05-08T07:22:50.559Z</updated>
+  <updated>2021-05-09T04:03:52.522Z</updated>
   <id>https://ruibol.github.io/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="https://ruibol.github.io/2021/05/08/%E3%80%90JavaSE%E3%80%91JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/"/>
     <id>https://ruibol.github.io/2021/05/08/%E3%80%90JavaSE%E3%80%91JUC%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</id>
     <published>2021-05-08T07:30:42.000Z</published>
-    <updated>2021-05-08T07:22:50.559Z</updated>
+    <updated>2021-05-09T04:03:52.522Z</updated>
     
     
-    <summary type="html">JUC并发编程学习笔记。源码：https://github.com/ruibol/JavaSE/tree/master/JUC</summary>
+    <summary type="html">JUC并发编程学习笔记。&lt;br&gt;源码：https://github.com/ruibol/JavaSE/tree/master/JUC</summary>
     
     
     
@@ -44,10 +44,10 @@
     <link href="https://ruibol.github.io/2021/05/08/%E3%80%90JavaSE%E3%80%91%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
     <id>https://ruibol.github.io/2021/05/08/%E3%80%90JavaSE%E3%80%91%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</id>
     <published>2021-05-08T07:23:26.000Z</published>
-    <updated>2021-05-08T07:27:01.646Z</updated>
+    <updated>2021-05-09T04:03:33.509Z</updated>
     
     
-    <summary type="html">网络编程学习笔记。源码：https://github.com/ruibol/JavaSE/tree/master/NetworkProgram</summary>
+    <summary type="html">网络编程学习笔记。&lt;br&gt;源码：https://github.com/ruibol/JavaSE/tree/master/NetworkProgram</summary>
     
     
     
@@ -65,12 +65,12 @@
     <link href="https://ruibol.github.io/2021/05/08/%E3%80%90JavaSE%E3%80%91%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/"/>
     <id>https://ruibol.github.io/2021/05/08/%E3%80%90JavaSE%E3%80%91%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/</id>
     <published>2021-05-08T07:13:00.000Z</published>
-    <updated>2021-05-09T02:47:22.847Z</updated>
+    <updated>2021-05-09T04:08:15.884Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="三个内置注解"><a href="#三个内置注解" class="headerlink" title="三个内置注解"></a>三个内置注解</h1><ul><li><code>@Override</code></li><li><code>@Deprecated</code></li><li><code>@SuppressWarnings(&quot;all&quot;)</code></li></ul><h1 id="四个元注解"><a href="#四个元注解" class="headerlink" title="四个元注解"></a>四个元注解</h1><ul><li><code>Target(value = &#123;ElementType.METHOD, ElementType.TYPE&#125;)</code><br>Target表示我们的注解可以用在哪些地方</li><li><code>@Retention(value = RetentionPolicy.RUNTIME)</code><br>Retention表示我们的注解在什么地方有效（runtime&gt;class&gt;sources 一般都用runtime）</li><li><code>@Documented</code><br>Documented表示是否将我们的注解生成在JAVAdoc中</li><li><code>@Inherited</code><br>Inherited表示子类可以继承父类的注解</li></ul><p><strong>四个元注解，重点是Target和Retention，基本是必写</strong></p><h1 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h1><ul><li>用@interface自定义注解</li><li>注解的参数：<strong>参数类型 参数名();</strong><br>如果只有一个参数，建议用value命名<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> &quot;&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">age</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">id</span><span class="params">()</span> <span class="keyword">default</span> -1</span>; <span class="comment">//-1代表不存在</span></span><br><span class="line">String[] schools() <span class="keyword">default</span> &#123;<span class="string">&quot;monash&quot;</span>, <span class="string">&quot;utas&quot;</span>&#125;;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="三个内置注解"><a href="#三个内置注解" class="headerlink" title="三个内置注解"></a>三个内置注解</h1><ul><li><code>@Override</code></li><li><code>@Deprecated</code></li><li><code>@SuppressWarnings(&quot;all&quot;)</code></li></ul><h1 id="四个元注解"><a href="#四个元注解" class="headerlink" title="四个元注解"></a>四个元注解</h1><ul><li><code>Target(value = &#123;ElementType.METHOD, ElementType.TYPE&#125;)</code><br>Target表示我们的注解可以用在哪些地方</li><li><code>@Retention(value = RetentionPolicy.RUNTIME)</code><br>Retention表示我们的注解在什么地方有效（runtime&gt;class&gt;sources 一般都用runtime）</li><li><code>@Documented</code><br>Documented表示是否将我们的注解生成在JAVAdoc中</li><li><code>@Inherited</code><br>Inherited表示子类可以继承父类的注解</li></ul><p><strong>四个元注解，重点是Target和Retention，基本是必写</strong></p><h1 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h1><ul><li>用@interface自定义注解<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE, ElementType.METHOD&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    <span class="comment">//如果只有一个参数，建议用value命名</span></span><br><span class="line">    <span class="function">String <span class="title">value</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li>注解的参数：<strong>参数类型 参数名();</strong><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> &quot;&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">age</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">id</span><span class="params">()</span> <span class="keyword">default</span> -1</span>; <span class="comment">//-1代表不存在</span></span><br><span class="line">String[] schools() <span class="keyword">default</span> &#123;<span class="string">&quot;monash&quot;</span>, <span class="string">&quot;utas&quot;</span>&#125;;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
     
-    <summary type="html">自定义注解+&lt;br&gt;源码：https://github.com/ruibol/JavaSE/tree/master/AnnotationReflection</summary>
+    <summary type="html">注解和反射学习笔记&lt;br&gt;源码：https://github.com/ruibol/JavaSE/tree/master/AnnotationReflection</summary>
     
     
     

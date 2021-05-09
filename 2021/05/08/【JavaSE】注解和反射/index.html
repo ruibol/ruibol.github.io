@@ -81,15 +81,15 @@
 
 
 
-<meta name="description" content="自定义注解+源码：https:&#x2F;&#x2F;github.com&#x2F;ruibol&#x2F;JavaSE&#x2F;tree&#x2F;master&#x2F;AnnotationReflection">
+<meta name="description" content="注解和反射学习笔记源码：https:&#x2F;&#x2F;github.com&#x2F;ruibol&#x2F;JavaSE&#x2F;tree&#x2F;master&#x2F;AnnotationReflection">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【JavaSE】注解和反射">
 <meta property="og:url" content="https://ruibol.github.io/2021/05/08/%E3%80%90JavaSE%E3%80%91%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/index.html">
 <meta property="og:site_name" content="Reidorz">
-<meta property="og:description" content="自定义注解+源码：https:&#x2F;&#x2F;github.com&#x2F;ruibol&#x2F;JavaSE&#x2F;tree&#x2F;master&#x2F;AnnotationReflection">
+<meta property="og:description" content="注解和反射学习笔记源码：https:&#x2F;&#x2F;github.com&#x2F;ruibol&#x2F;JavaSE&#x2F;tree&#x2F;master&#x2F;AnnotationReflection">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-05-08T07:13:00.000Z">
-<meta property="article:modified_time" content="2021-05-09T02:47:22.847Z">
+<meta property="article:modified_time" content="2021-05-09T04:08:15.884Z">
 <meta property="article:author" content="ruibol">
 <meta property="article:tag" content="JavaSE">
 <meta property="article:tag" content="注解">
@@ -348,7 +348,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2021-05-09T10:47:22+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2021-05-09T12:08:15+08:00">
                 2021-05-09
               </time>
             
@@ -389,7 +389,7 @@
 
           
               <div class="post-description">
-                  自定义注解+<br>源码：https://github.com/ruibol/JavaSE/tree/master/AnnotationReflection
+                  注解和反射学习笔记<br>源码：https://github.com/ruibol/JavaSE/tree/master/AnnotationReflection
               </div>
           
 
@@ -419,8 +419,8 @@
 </ul>
 <p><strong>四个元注解，重点是Target和Retention，基本是必写</strong></p>
 <h1 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h1><ul>
-<li>用@interface自定义注解</li>
-<li>注解的参数：<strong>参数类型 参数名();</strong><br>如果只有一个参数，建议用value命名<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> &quot;&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">age</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">id</span><span class="params">()</span> <span class="keyword">default</span> -1</span>; <span class="comment">//-1代表不存在</span></span><br><span class="line">String[] schools() <span class="keyword">default</span> &#123;<span class="string">&quot;monash&quot;</span>, <span class="string">&quot;utas&quot;</span>&#125;;</span><br></pre></td></tr></table></figure></li>
+<li>用@interface自定义注解<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE, ElementType.METHOD&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    <span class="comment">//如果只有一个参数，建议用value命名</span></span><br><span class="line">    <span class="function">String <span class="title">value</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>注解的参数：<strong>参数类型 参数名();</strong><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> &quot;&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">age</span><span class="params">()</span> <span class="keyword">default</span> 0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">id</span><span class="params">()</span> <span class="keyword">default</span> -1</span>; <span class="comment">//-1代表不存在</span></span><br><span class="line">String[] schools() <span class="keyword">default</span> &#123;<span class="string">&quot;monash&quot;</span>, <span class="string">&quot;utas&quot;</span>&#125;;</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
