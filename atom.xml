@@ -33,11 +33,11 @@
     <category term="学习笔记" scheme="https://ruibol.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
+    <category term="Java" scheme="https://ruibol.github.io/tags/Java/"/>
+    
     <category term="数据结构" scheme="https://ruibol.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="算法" scheme="https://ruibol.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="Java" scheme="https://ruibol.github.io/tags/Java/"/>
     
   </entry>
   
@@ -58,9 +58,9 @@
     <category term="学习笔记" scheme="https://ruibol.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="Java" scheme="https://ruibol.github.io/tags/Java/"/>
-    
     <category term="JavaSE" scheme="https://ruibol.github.io/tags/JavaSE/"/>
+    
+    <category term="Java" scheme="https://ruibol.github.io/tags/Java/"/>
     
     <category term="多线程" scheme="https://ruibol.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     
