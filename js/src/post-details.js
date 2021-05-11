@@ -75,7 +75,7 @@ $(document).ready(function () {
     var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
 
     // 对获取到的url进行重编码
-    targetSelector = decodeURI(this.getAttribute('href'))
+    targetSelector = decodeURI(this.getAttribute('href'));
 
     var offset = $(targetSelector).offset().top;
 
