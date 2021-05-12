@@ -33,6 +33,19 @@
       </categories>
   </entry>
   <entry>
+    <title>【数据结构】笔记整合+源码+Java实现</title>
+    <url>/2021/05/11/data-structure-notes/</url>
+    <content><![CDATA[<h3 id="施工中…"><a href="#施工中…" class="headerlink" title="施工中…"></a>施工中…</h3>]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【IDE】快捷操作记录</title>
     <url>/2021/05/07/ide-shortcuts/</url>
     <content><![CDATA[<h1 id="IDEA"><a href="#IDEA" class="headerlink" title="IDEA"></a>IDEA</h1><ol>
@@ -71,17 +84,42 @@
       </tags>
   </entry>
   <entry>
-    <title>【数据结构】笔记整合+源码+Java实现</title>
-    <url>/2021/05/11/data-structure-notes/</url>
-    <content><![CDATA[<h3 id="施工中…"><a href="#施工中…" class="headerlink" title="施工中…"></a>施工中…</h3>]]></content>
+    <title>欢迎来到我的博客</title>
+    <url>/2021/05/07/welcome-to-my-blog/</url>
+    <content><![CDATA[<h2 id="本博客计划将所有文章分为五类以便查阅"><a href="#本博客计划将所有文章分为五类以便查阅" class="headerlink" title="本博客计划将所有文章分为五类以便查阅"></a>本博客计划将所有文章分为五类以便查阅</h2><table>
+<thead>
+<tr>
+<th align="center">分类</th>
+<th align="center">内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">学习笔记</td>
+<td align="center">知识点和易错点</td>
+</tr>
+<tr>
+<td align="center">项目总结</td>
+<td align="center">项目的设计思路、实现过程以及难点</td>
+</tr>
+<tr>
+<td align="center">解决方案</td>
+<td align="center">对某个特定问题的解决方法</td>
+</tr>
+<tr>
+<td align="center">博客站务</td>
+<td align="center">该博客的搭建、部署、更新以及公告</td>
+</tr>
+<tr>
+<td align="center">日志随笔</td>
+<td align="center">除以上类别外的所有文章</td>
+</tr>
+</tbody></table>
+<p><strong>某些文章未开启评论功能，如有需要可在“关于”页面留言，或通过网页版左侧邮箱联系我</strong></p>
+<p><font color="red"><strong>感谢<a href="https://yxchangingself.xyz/">@憧憬少</a>提供的博客分类思路</strong></font></p>
+]]></content>
       <categories>
-        <category>学习笔记</category>
+        <category>博客站务</category>
       </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
-        <tag>Java</tag>
-      </tags>
   </entry>
   <entry>
     <title>【JavaSE】笔记整合+源码</title>
@@ -154,62 +192,5 @@
         <tag>JUC</tag>
         <tag>JVM</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>【数学】学习记录</title>
-    <url>/2021/05/12/math-notes/</url>
-    <content><![CDATA[<h1 id="多项式"><a href="#多项式" class="headerlink" title="多项式"></a>多项式</h1><p>在数学中，由若干个单项式相加组成的代数式叫做多项式（若有减法：减一个数等于加上它的相反数）。多项式中的每个单项式叫做多项式的项，这些单项式中的最高项次数，就是这个多项式的次数。其中多项式中不含字母的项叫做常数项。</p>
-<h1 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h1><p>由m × n个数aij排成的m行n列的数表称为m行n列的矩阵，简称m × n矩阵。记作：</p>
-<p><img src="/.io//mxn-matrix.png"></p>
-<ul>
-<li>这m×n 个数称为矩阵A的元素，简称为元，数aij位于矩阵A的第i行第j列，称为矩阵A的(i,j)元，以数 aij为(i,j)元的矩阵可记为(aij)或(aij)m × n，m×n矩阵A也记作Amn。</li>
-<li>元素是实数的矩阵称为实矩阵，元素是复数的矩阵称为复矩阵。而行数与列数都等于n的矩阵称为n阶矩阵或n阶方阵。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>欢迎来到我的博客</title>
-    <url>/2021/05/07/welcome-to-my-blog/</url>
-    <content><![CDATA[<h2 id="本博客计划将所有文章分为五类以便查阅"><a href="#本博客计划将所有文章分为五类以便查阅" class="headerlink" title="本博客计划将所有文章分为五类以便查阅"></a>本博客计划将所有文章分为五类以便查阅</h2><table>
-<thead>
-<tr>
-<th align="center">分类</th>
-<th align="center">内容</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">学习笔记</td>
-<td align="center">知识点和易错点</td>
-</tr>
-<tr>
-<td align="center">项目总结</td>
-<td align="center">项目的设计思路、实现过程以及难点</td>
-</tr>
-<tr>
-<td align="center">解决方案</td>
-<td align="center">对某个特定问题的解决方法</td>
-</tr>
-<tr>
-<td align="center">博客站务</td>
-<td align="center">该博客的搭建、部署、更新以及公告</td>
-</tr>
-<tr>
-<td align="center">日志随笔</td>
-<td align="center">除以上类别外的所有文章</td>
-</tr>
-</tbody></table>
-<p><strong>某些文章未开启评论功能，如有需要可在“关于”页面留言，或通过网页版左侧邮箱联系我</strong></p>
-<p><font color="red"><strong>感谢<a href="https://yxchangingself.xyz/">@憧憬少</a>提供的博客分类思路</strong></font></p>
-]]></content>
-      <categories>
-        <category>博客站务</category>
-      </categories>
   </entry>
 </search>

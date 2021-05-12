@@ -6,7 +6,7 @@
   <link href="https://ruibol.github.io/atom.xml" rel="self"/>
   
   <link href="https://ruibol.github.io/"/>
-  <updated>2021-05-12T08:53:09.792Z</updated>
+  <updated>2021-05-12T02:10:06.047Z</updated>
   <id>https://ruibol.github.io/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>【数学】学习记录</title>
-    <link href="https://ruibol.github.io/2021/05/12/math-notes/"/>
-    <id>https://ruibol.github.io/2021/05/12/math-notes/</id>
-    <published>2021-05-12T02:06:34.000Z</published>
-    <updated>2021-05-12T08:53:09.792Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="多项式"><a href="#多项式" class="headerlink" title="多项式"></a>多项式</h1><p>在数学中，由若干个单项式相加组成的代数式叫做多项式（若有减法：减一个数等于加上它的相反数）。多项式中的每个单项式叫做多项式的项，这些单项式中的最高项次数，就是这个多项式的次数。其中多项式中不含字母的项叫做常数项。</p><h1 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h1><p>由m × n个数aij排成的m行n列的数表称为m行n列的矩阵，简称m × n矩阵。记作：</p><p><img src="/.io//mxn-matrix.png"></p><ul><li>这m×n 个数称为矩阵A的元素，简称为元，数aij位于矩阵A的第i行第j列，称为矩阵A的(i,j)元，以数 aij为(i,j)元的矩阵可记为(aij)或(aij)m × n，m×n矩阵A也记作Amn。</li><li>元素是实数的矩阵称为实矩阵，元素是复数的矩阵称为复矩阵。而行数与列数都等于n的矩阵称为n阶矩阵或n阶方阵。</li></ul>]]></content>
-    
-    
-    <summary type="html">记录学习过程中遇到的数学知识，持续更新</summary>
-    
-    
-    
-    <category term="学习笔记" scheme="https://ruibol.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="算法" scheme="https://ruibol.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="数学" scheme="https://ruibol.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
   
   <entry>
     <title>【数据结构】笔记整合+源码+Java实现</title>
